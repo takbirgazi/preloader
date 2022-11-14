@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.preloder{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.cover{
+    height: 200px;
+    background: #ececec;
+}
+.info{
+    padding: 30px;
+}
+.line {
+    height: 50px;
+    background: #ececec;
+    border-radius:2px;
+    margin-bottom: 20px;
+}
+.line:nth-child(1){
+    height: 155px;
+    width: 155px;
+}
+.cover, .squre, .line{
+    background-image: linear-gradient(120deg, #ececec 50%, #fafafa 60%, #fafafa 61%, #ececec 70%);
+    background-size: 200%;
+    background-position: 100% 0;
+    animation: wave 2s linear infinite;
+}
+@keyframes wave {
+    100%{
+        background-position: -100% 0;
+    }
+}
